@@ -37,7 +37,8 @@ int main() {
 				?	( c - 'a' + 'A' ) 
 				:	c; */
 
-		printf("%c", c);
+		putc(c, stdout);
+//		printf("%c", c);
 	} while (c != '\n');
 
 // now let's print the alphabet and the corresponding character codes
