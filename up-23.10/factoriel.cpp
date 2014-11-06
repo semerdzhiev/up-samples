@@ -1,7 +1,9 @@
 // up-10.24.cpp : Defines the entry point for the console application.
 //
 
+#ifdef USE_PRECOMPILED_HEADER
 #include "stdafx.h"
+#endif
 
 // #include <iostream>			// алтернативен изход
 // using namespace std;

@@ -1,7 +1,11 @@
 // types.cpp.cpp : Defines the entry point for the console application.
 //
 
+
+
+#ifdef USE_PRECOMPILED_HEADER
 #include "stdafx.h"
+#endif
 
 int main() {
     int a = 0; 

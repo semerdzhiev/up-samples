@@ -1,12 +1,11 @@
 // gcd.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
 
-// gcd.cpp : Defines the entry point for the console application.
-//
 
+#ifdef USE_PRECOMPILED_HEADER
 #include "stdafx.h"
+#endif
 
 // http://upload.wikimedia.org/wikipedia/commons/3/37/Euclid%27s_algorithm_Book_VII_Proposition_2_3.png
 
