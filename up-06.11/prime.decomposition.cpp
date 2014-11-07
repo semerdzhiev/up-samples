@@ -11,14 +11,18 @@ int primes[100];
 int main() {
 	int counter = 0;
 	unsigned long mynum = 2*2*3*3*5;
+	int i = 2;
 
-	for(int i = 2; i <= mynum; i++){
+	do {
 		while(mynum % i == 0) {
 			primes[counter] = i;
 			counter++;
 			mynum /= i;
 		}
-	}
+
+		i++;
+
+	} while (i <= mynum);
 
 	for (int c = 0; primes[c]; c++ ) {
 		printf("%u ", primes[c]);
