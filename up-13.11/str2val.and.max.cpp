@@ -1,7 +1,9 @@
 // up-13.11-2.cpp : Defines the entry point for the console application.
 //
 
+#ifdef USE_PRECOMPILED_HEADER
 #include "stdafx.h"
+#endif
 
 #include <math.h>
 
