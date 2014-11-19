@@ -1,9 +1,7 @@
 // bitplay.c.cpp : Defines the entry point for the console application.
 //
 
-#ifdef USE_PRECOMPILED_HEADER
 #include "stdafx.h"
-#endif
 
 // get this uint type as in C#
 

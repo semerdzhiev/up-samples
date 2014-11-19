@@ -1,9 +1,7 @@
 // letters.table.cpp : Defines the entry point for the console application.
 //
 
-#ifdef USE_PRECOMPILED_HEADER
 #include "stdafx.h"
-#endif
 
 #include <cstdlib>
 

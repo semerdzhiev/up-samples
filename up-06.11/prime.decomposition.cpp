@@ -1,9 +1,6 @@
 //
 
-#ifdef USE_PRECOMPILED_HEADER
 #include "stdafx.h"
-#endif
-
 #include <stdio.h>
 
 using namespace std;
