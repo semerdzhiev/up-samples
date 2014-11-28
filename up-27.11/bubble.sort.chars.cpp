@@ -4,8 +4,8 @@
 #include "stdafx.h"
 #include <iostream>
 
-typedef etype char;
-typedef uint unsigned int;
+typedef char etype;
+typedef unsigned int uint;
 
 // list
 // array
