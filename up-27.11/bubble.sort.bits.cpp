@@ -25,13 +25,7 @@ void asbin(unsigned char a) {
 	for (int i = 7; i >= 0; i--)
 	{
 		int mask = 1 << i;
-		if (a & mask)
-		{
-			std::cout << 1;
-		}
-		else { 
-			std::cout << 0;
-		}
+		std::cout << ( a & mask )  ? 1 : 0;
 	}
 }
 

@@ -1,14 +1,17 @@
-[2~// bubble.sort.cpp : Defines the entry point for the console application.
+// bubble.sort.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
 #include <iostream>
 
+typedef etype char;
+typedef uint unsigned int;
+
 // list
 // array
 
 // int arr[] = {6,7,8,2,1,3};
-char arr[] = {'C', 'd', 'X', 'a', 'b', 'Y', 'G' };
+etype arr[] = {'C', 'd', 'X', 'a', 'b', 'Y', 'G' };
 
 int nelems = sizeof(arr) / sizeof(arr[0]);
 
@@ -26,16 +29,14 @@ void printme() {
 }
 
 void swap(unsigned int ai, unsigned int aj) { 
-	int t = arr[aj];
+	etype t = arr[aj];
 	arr[aj] = arr[ai];
 	arr[ai] = t;
 }
 
 bool isgood(unsigned int ai, unsigned int aj) { 
-//	return	arr[ai] > arr[aj];
-
-	char a = arr[ai];
-	char b = arr[aj];
+	etype a = arr[ai];
+	etype b = arr[aj];
 
 	if ( a >= 'a' && a <= 'z') {
 		a = a -'a' + 'A';
