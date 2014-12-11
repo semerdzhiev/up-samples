@@ -3,10 +3,7 @@
 
 /* 
 
-	Задача:
-
-	Да се намери най-дългата аритметична прогресия измежду INT_MAX >> 4 числа, 
-	генерирани от генератор на случайни числа в интервала 0..64 и да се изведе
+   find the longest arithmetic progression in stream of random numbers
 
 */
 
@@ -22,46 +19,54 @@ const int RMAX = 64;
 const int NUMTOTAL = INT_MAX >> 4;
 
 int main() {
-	srand (time(NULL));
+    srand (time(NULL));
 
-	uint pelem = 0;		// previous element
+    uint pelem = 0;        // previous element
 
-	uint first = pelem = rand() % RMAX;
-	int cdiff = 0;		// current difference
-	uint cplen = 1;		// length of current progression 
+    uint first = pelem = rand() % RMAX;
+    int cdiff = 0;        // current difference
+    uint cplen = 1;        // length of current progression 
 
-	uint bestplen = 0;
-	int bestdiff = cdiff;
-	uint bestfirst;
+    uint bestplen = 0;
+    int bestdiff = cdiff;
+    uint bestfirst;
 
-	for ( uint cnt = 0; cnt <= NUMTOTAL; cnt++ ) {
-		uint celem = rand() % RMAX;
-		if ( cnt % (1 << 17) == 0 ) 
-			printf(".");
+    for ( uint cnt = 0; cnt <= NUMTOTAL; cnt++ ) {
+        uint celem = rand() % RMAX;
+        if ( cnt % (1 << 17) == 0 ) 
+            printf(".");
 
-		if ( celem - pelem == cdiff ) { 
-			cplen++;
-		} else { 
-			if ( cplen > bestplen ) {
-				bestplen = cplen;
-				bestdiff = cdiff;
-				bestfirst = first;
-			}
+        // if the current element and the next
+        // have the same difference as before
+        // increase the length of the progression
+        //
+        // otherwise - see if the current progression
+        // beats the best so far
+        //
 
-			cplen = 2;
-			cdiff = pelem - celem;
-			first = pelem;
-		}
+        if ( celem - pelem == cdiff ) { 
+            cplen++;
+        } else { 
+            if ( cplen > bestplen ) {
+                bestplen = cplen;
+                bestdiff = cdiff;
+                bestfirst = first;
+            }
 
-		pelem = celem;
-	}
+            cplen = 2;
+            cdiff = pelem - celem;
+            first = pelem;
+        }
 
-	printf("\n sequence found: ");
-	
-	for ( int i = bestfirst; i < bestfirst + bestdiff * bestplen; i += bestdiff ) { 
-		printf ("%d, ", i);
-	}
+        pelem = celem;
+    }
 
-	return 0;
+    printf("\n sequence found: ");
+    
+    for ( int i = bestfirst; i < bestfirst + bestdiff * bestplen; i += bestdiff ) { 
+        printf ("%d, ", i);
+    }
+
+    return 0;
 }
 
