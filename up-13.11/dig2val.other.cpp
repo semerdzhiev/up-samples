@@ -3,9 +3,12 @@
 
 /*
 
-	от стандартния вход се въвежда симовлен низ
+	find all integer values in some string read from stdin.
+	and all characters as consequent numbers in the alphabet
 
-	1023 asd 9023 sd 91
+	for example in 
+
+		1023 asd 9023 sd 91
 
 	we want the digits to be interpreted as numbers 
 	and characters to be interpreted as values denoting
@@ -13,7 +16,7 @@
 
 	thus 
 
-	"1023" should be interpreted  as 102
+	"1023" should be interpreted as 1023
 	"b" should be interpreted as 2
 
 	so in this example we wantg

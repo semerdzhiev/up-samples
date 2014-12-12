@@ -1,6 +1,8 @@
 // letters.table.cpp : Defines the entry point for the console application.
 //
 
+/* print the alphabet in a neat table */
+
 #include "stdafx.h"
 
 #include <cstdlib>

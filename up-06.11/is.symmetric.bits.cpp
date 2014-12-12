@@ -1,6 +1,18 @@
 // issymmetric.bits.cpp : Defines the entry point for the console application.
 //
 
+/* determine whether a number is symmetric in terms of its bits.
+
+i.e. 
+
+1011 1101 is symmetric (8 bit number)
+
+1000 1000 1000 1000 is not symmetric (16 bit number)
+
+assume that we work with 32 bit numbers
+
+*/
+
 #include "stdafx.h"
 
 #include <stdio.h>
