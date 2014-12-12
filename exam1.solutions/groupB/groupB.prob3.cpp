@@ -26,7 +26,6 @@ OUTPUT
 int main() {
     int sum = 0;
     uint n, k, spos = 0;
-    uint numcount = sizeof(ary) / sizeof(int);
 
     std::cin >> k >> n;
 
