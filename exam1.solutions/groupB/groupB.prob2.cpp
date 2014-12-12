@@ -39,7 +39,7 @@ int main() {
 	}
 #endif
 	int k = 0;
-	// do selection sort as we assume K is lot smaller than N
+
 	for (int i=0; i < n; i++ ) {
 		bool prime = true;
 		for (int j = 2; j < arr1[i] && prime; j++) {
