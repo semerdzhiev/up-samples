@@ -16,6 +16,11 @@ uint pcache[170];
 // based on the Prime Number theorem, there are less than 170 primes
 // in the 1..1000 range
 
+// in this solution we introduce a cache to keep primes that area
+// already known, thus avoiding having to calculate all cached numbers
+// beforehand
+
+
 int main() {
     int sum = 0;
     uint n;
@@ -35,7 +40,7 @@ int main() {
 	// so that we don't have to input 100 numbers
     srand(time(NULL));
     for (int i=0; i<n; i++) {
-        arr1[i] = (rand() % 128);
+        arr1[i] = (rand() % 1000);
     }
 #else
     for (int i=0; i<n; i++) {
