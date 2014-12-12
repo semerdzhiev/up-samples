@@ -44,7 +44,7 @@ int main() {
 		}
 
 		even = !even;
-	} while (++cpos <= n);
+	} while (++cpos <= n && goodseq);
 
 	std::cout << (goodseq ? "YES" : "NO");
 	return 0;
