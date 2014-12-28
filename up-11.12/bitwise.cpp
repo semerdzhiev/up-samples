@@ -1,4 +1,4 @@
-// bitwise.cpp : Defines the entry point for the console application.
+// bitwise.cpp : convert number to its binary representation and print it
 //
 
 #include "stdafx.h"
@@ -10,8 +10,6 @@ unsigned int v = (1 << 31) + ( 1 << 24 ) + (1 << 15) + (1 << 8) + (1 << 3);
 //
 // 2^10 + 2 ^ 3
 // sizeof(unsigned int) == 32 bits == 4 bytes
-
-char str[] = " asdf asd asf ";
 
 char brep[INT_BIT_SIZE  + 1];
 
