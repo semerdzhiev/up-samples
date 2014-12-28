@@ -7,6 +7,12 @@
 
 int ary[1000];
 
+/*
+ given a sequence of 1000 numbers (we'll generate it)
+ clear all elements of the sequence, so that 
+ are lower than the sum of the preciding elements 
+*/
+
 int main() {
 	srand(time(NULL));
 
@@ -22,9 +28,6 @@ int main() {
 		ary[i] = (rand() % 1000) * i/numcount;
 	}
 	
-	// clear all elements of the sequence, that 
-	// are lower than the sum of the preciding elements 
-
 	do {
 		if (ary[cnum] < sum) {
 //			memcpy(&ary[cnum], &ary[cnum+1], ( sizeof (int) )* (numcount-cnum-1));
