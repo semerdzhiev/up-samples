@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Two-dimensional Dynamic Arr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Error handling with new", "Error handling with new\Error handling with new.vcxproj", "{7C5AC84D-1763-44FE-92CA-B5A2AD415207}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MallocFreeEtc", "MallocFreeEtc\MallocFreeEtc.vcxproj", "{71B1D17B-6264-4154-BC60-FBA0F3CFC94C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{7C5AC84D-1763-44FE-92CA-B5A2AD415207}.Debug|Win32.Build.0 = Debug|Win32
 		{7C5AC84D-1763-44FE-92CA-B5A2AD415207}.Release|Win32.ActiveCfg = Release|Win32
 		{7C5AC84D-1763-44FE-92CA-B5A2AD415207}.Release|Win32.Build.0 = Release|Win32
+		{71B1D17B-6264-4154-BC60-FBA0F3CFC94C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{71B1D17B-6264-4154-BC60-FBA0F3CFC94C}.Debug|Win32.Build.0 = Debug|Win32
+		{71B1D17B-6264-4154-BC60-FBA0F3CFC94C}.Release|Win32.ActiveCfg = Release|Win32
+		{71B1D17B-6264-4154-BC60-FBA0F3CFC94C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
