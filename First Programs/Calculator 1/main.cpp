@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 using namespace std;
 
 int main()
@@ -7,13 +7,13 @@ int main()
 
 	cout << "Enter temperature in Fahrenheit: ";
 
-	// Стандартен вход
+	// РЎС‚Р°РЅРґР°СЂС‚РµРЅ РІС…РѕРґ
 	cin >> Fahrenheit;
 
-	// Извеждане на няколко елемента
+	// РР·РІРµР¶РґР°РЅРµ РЅР° РЅСЏРєРѕР»РєРѕ РµР»РµРјРµРЅС‚Р°
 	cout << "You entered: " << Fahrenheit << endl;
 
-	// Формулата е C = (F – 32) * 5/9
+	// Р¤РѕСЂРјСѓР»Р°С‚Р° Рµ C = (F вЂ“ 32) * 5/9
 	Celsius = (Fahrenheit - 32) * 5.0 / 9.0;
 
 	cout << Fahrenheit << " in F = "

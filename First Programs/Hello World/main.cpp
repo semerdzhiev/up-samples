@@ -1,10 +1,10 @@
-#include <iostream>
+п»ї#include <iostream>
 
 using namespace std;
 
 int main()
 {
-	// Извежда "Hello world!"
+	// РР·РІРµР¶РґР° "Hello world!"
 	cout << "Hello world!";
 
 	return 0;
